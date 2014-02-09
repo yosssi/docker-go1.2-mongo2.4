@@ -10,8 +10,8 @@ MAINTAINER Keiji Yoshida, yoshida.keiji.84@gmail.com
 # Update the package lists.
 RUN apt-get update
 
-# Install curl.
-RUN apt-get install -y curl
+# Install curl and git.
+RUN apt-get install -y curl git
 
 # Install Go 1.2.
 RUN curl -o /usr/local/go1.2.linux-amd64.tar.gz https://go.googlecode.com/files/go1.2.linux-amd64.tar.gz
